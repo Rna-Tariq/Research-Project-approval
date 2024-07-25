@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga Board</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <div class="board">
+        <div class="column">
+            <h2>Proposed</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Implement Login</h3>
+                    <p>Implement Firebase's authorization flow for logging in</p>
+                    <div class="checklist">
+                        <h4>Checklist</h4>
+                        <ul>
+                            <li><input type="checkbox"> Guest login</li>
+                            <li><input type="checkbox"> User login</li>
+                        </ul>
+                    </div>
+                    <div class="details">
+                        <button class="show-details">Show Details</button>
+                        <div class="extra-details">
+                            <p><strong>Due Date:</strong> Feb 27 at 2:22 PM</p>
+                            <p><strong>Members:</strong> <span class="member">K</span></p>
+                            <div class="activity">
+                                <h4>Activity</h4>
+                                <textarea placeholder="Write a comment..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Create ability to sign up as a new user</h3>
+                    <p>A new user needs to provide the following information:
+                        <ul>
+                            <li>Name (required)</li>
+                            <li>Email (required)</li>
+                            <li>Password (required)</li>
+                            <li>Password verify (required)</li>
+                            <li>Birthday (required)</li>
+                            <li>Boy/girl (optional)</li>
+                        </ul>
+                        After signup, the new user must verify via email and then the account becomes verified.
+                    </p>
+                    <div class="attachments">
+                        <h4>Attachments</h4>
+                        <p><a href="path/to/screenshot.png">Screenshot 2020-02-05 13.22.10.png</a></p>
+                    </div>
+                    <div class="details">
+                        <button class="show-details">Show Details</button>
+                        <div class="extra-details">
+                            <p><strong>Due Date:</strong> Not set</p>
+                            <p><strong>Members:</strong> <span class="member">Michelle Lai</span></p>
+                            <div class="activity">
+                                <h4>Activity</h4>
+                                <textarea placeholder="Write a comment..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+            <button class="add-card">+ Add a card</button>
+        </div>
+        <!-- Other columns (Approved, In Progress, etc.) will be similar -->
+    </div>
+
+    <!-- Invite Section -->
+    <div class="invite-section">
+        <h2>Invite Members</h2>
+        <form id="inviteForm">
+            <input type="email" id="email" placeholder="Enter email address" required>
+            <button type="submit">Invite</button>
+        </form>
+    </div>
+
+    <script src="task4.js"></script>
+</body>
+</html>

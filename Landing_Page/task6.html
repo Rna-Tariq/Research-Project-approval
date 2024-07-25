@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Board Example</title>
+    <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+    <div class="board">
+        <div class="column">
+            <h2>Proposed</h2>
+            <div class="card-container">
+                <!-- Existing Proposed Cards -->
+                <!-- ... -->
+            </div>
+            <button class="add-card">+ Add a card</button>
+        </div>
+        <div class="column">
+            <h2>Approved</h2>
+            <div class="card-container">
+                <div class="card" data-priority="1" data-dependencies="">
+                    <h3>Create presentation</h3>
+                    <p>Prepare slides for the project presentation, including an overview, features, and technical details.</p>
+                    <div class="details">
+                        <button class="show-details">Show Details</button>
+                        <div class="extra-details">
+                            <p><strong>Due Date:</strong> <span class="due-date"></span></p>
+                            <p><strong>Members:</strong> <span class="member">John Doe</span></p>
+                            <div class="activity">
+                                <h4>Activity</h4>
+                                <textarea placeholder="Write a comment..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-priority="2" data-dependencies="">
+                    <h3>Create project landing page</h3>
+                    <p>Design and develop the landing page for the project, highlighting key features and providing an overview.</p>
+                    <div class="details">
+                        <button class="show-details">Show Details</button>
+                        <div class="extra-details">
+                            <p><strong>Due Date:</strong> <span class="due-date"></span></p>
+                            <p><strong>Members:</strong> <span class="member">Jane Smith</span></p>
+                            <div class="activity">
+                                <h4>Activity</h4>
+                                <textarea placeholder="Write a comment..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-priority="3" data-dependencies="">
+                    <h3>Write comprehensive README.md</h3>
+                    <p>Draft a comprehensive README.md file, including setup instructions, usage details, and contribution guidelines.</p>
+                    <div class="details">
+                        <button class="show-details">Show Details</button>
+                        <div class="extra-details">
+                            <p><strong>Due Date:</strong> <span class="due-date"></span></p>
+                            <p><strong>Members:</strong> <span class="member">Alice Johnson</span></p>
+                            <div class="activity">
+                                <h4>Activity</h4>
+                                <textarea placeholder="Write a comment..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-priority="4" data-dependencies="">
+                    <h3>Make demo of the project</h3>
+                    <p>Create a video demo of the project, showcasing the main features and functionality.</p>
+                    <div class="details">
+                        <button class="show-details">Show Details</button>
+                        <div class="extra-details">
+                            <p><strong>Due Date:</strong> <span class="due-date"></span></p>
+                            <p><strong>Members:</strong> <span class="member">Bob Brown</span></p>
+                            <div class="activity">
+                                <h4>Activity</h4>
+                                <textarea placeholder="Write a comment..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-priority="5" data-dependencies="">
+                    <h3>Write blog post</h3>
+                    <p>Write a blog post about the project, detailing the development process, challenges faced, and solutions implemented.</p>
+                    <div class="details">
+                        <button class="show-details">Show Details</button>
+                        <div class="extra-details">
+                            <p><strong>Due Date:</strong> <span class="due-date"></span></p>
+                            <p><strong>Members:</strong> <span class="member">Charlie Clark</span></p>
+                            <div class="activity">
+                                <h4>Activity</h4>
+                                <textarea placeholder="Write a comment..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="add-card">+ Add a card</button>
+        </div>
+        <!-- Other columns (In Progress, Dev Complete, etc.) will be similar -->
+    </div>
+
+    <!-- Invite Section -->
+    <div class="invite-section">
+        <h2>Invite Members</h2>
+        <form id="inviteForm">
+            <input type="email" id="email" placeholder="Enter email address" required>
+            <button type="submit">Invite</button>
+        </form>
+    </div>
+
+    <script src="task6.js"></script>
+</body>
+</html>
